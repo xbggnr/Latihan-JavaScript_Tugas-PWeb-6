@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles1.css">
+        <title>Form Registrasi</title>
+    </head>
+    <body>
+        <h1>Form Registrasi</h1>
+        <div>
+            <form id="formRegistrasi" onsubmit="event.preventDefault(); alert('Data berhasil dikirim!');">
+                <label for="nama">Nama Mahasiswa</label>
+                <input type="text" id="nama" list="list-nama" autocomplete="off" required><br>
+                <datalist id="list-nama"></datalist>
+
+                <label for="nim">NIM</label>
+                <input type="text" id="nim" required>
+
+                <label for="matkul">Mata Kuliah</label>
+                <input type="text" id="matkul" required>
+
+                <label for="dosen">Dosen</label>
+                <input type="text" id="dosen" list="list-dosen" autocomplete="off" required>
+                <datalist id="list-dosen"></datalist>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <script>
+                const databaseMahasiswa = [
+                    "Rusdi Saputra", "Mandy Putra", "Reza Kurniawan", "Janhardo Wawak", "Bonny Lukman", "Gofar Hilman", "Rico Lubis", "Hendra Kurniawan", "Alex Pereira", "Jhonny Blake", "Blake Griffin", "Allen Simangunsong", "Ferdian Paleka", "Jew Hatak", "Ronny Parulian"
+                ];
+
+                const databaseDosen = [
+                    "James Hilton S.T., M.T.", "Dr. Rozan Hittaker  S.T., M.T.", "Dr. Thomas Jameson S.T., M.T., Ph.D.", "Andra Lucky S.T., M.Kom."
+                ]
+
+                document.getElementById('list-nama').innerHTML = databaseMahasiswa.map(nama => `<option value="${nama}">`).join('');
+                document.getElementById('list-dosen').innerHTML = databaseDosen.map(nama => `<option value="${nama}">`).join('');
+            </script>
+        </div>
+    </body>
+</html>

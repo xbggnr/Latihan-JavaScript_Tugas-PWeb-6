@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles2.css">
+        <title>Pos Indonesia</title>
+    </head>
+    <body>
+        <header>
+            <h2>Kode Pos Indonesia</h2>
+        </header>
+        <form id="form" onsubmit="event.preventDefault(); alert('Data berhasil dikirim');">
+            <p>Cari kode pos di wilayah Indonesia dengan memasukkan beberapa kata kunci pencarian di bawah ini.</p>
+            <label>Provinsi</label>
+            <input type="text" id="provinsi" list="list-provinsi" autocomplete="off" required>
+            <datalist id="list-provinsi"></datalist>
+            <label>Kota atau Kabupaten</label>
+            <input type="text" id="kota" list="list-kota" autocomplete="off" required>
+            <datalist id="list-kota"></datalist>
+            <label>Masukkan Kata Kunci Pencarian</label>
+            <input type="search" id="kodepos" autocomplete="off" required>
+            <button type="submit">Cari</button>
+        </form>
+        <script src="tugas2.js"></script>
+        <script>
+            document.getElementById('list-provinsi').innerHTML = provinsi.map(item => `<option value="${item}">${item}</option>`).join('');
+            const inputProvinsi = document.getElementById('provinsi');
+            inputProvinsi.addEventListener('input', function(e){
+                if (e.inputType === 'deleteContentBackward') return;
+                const ketik = this.value;
+                if (!ketik) return;
+
+                const cocok = provinsi.find(p => p.toLower)
+            })
+        </script>
+    </body>
+</html>
