@@ -11,6 +11,7 @@ NRP  : 5025251039
 ### Penyelesaian
 
 ![tugas 1](img/image.png) <br>
+https://latihanpertemuan6javascript.vercel.app/<br>
 
 **Fitur:**
 *   **Autocomplete/Rekomendasi Otomatis:** Sistem memberikan rekomendasi nama mahasiswa dan nama dosen secara langsung saat pengguna mulai mengetikkan karakter pada kolom input.
@@ -33,6 +34,8 @@ JavaScript mengambil elemen `<datalist>` berdasarkan ID menggunakan `document.ge
 ### Penyelesaian
 
 ![tugas 2](img/image-1.png) <br>
+https://latihanpertemuan6javascript.vercel.app/tugas2.html
+<br>
 
 **Fitur:**
 *   **Smart Autofill & Text Selection:** Saat pengguna mengetik nama provinsi atau kota, sistem secara otomatis melengkapi (*autofill*) sisa kata dan memblok teks tersebut sehingga proses input menjadi lebih cepat.
@@ -59,6 +62,7 @@ JavaScript mengambil elemen `<datalist>` berdasarkan ID menggunakan `document.ge
 ### Penyelesaian
 
 ![Tugas 3.1](img/image-2.png)<br>
+https://latihanpertemuan6javascript.vercel.app/tugas3.html<br>
 
 **Fitur:**
 *   **Validasi Real-Time Form Submit:** Mencegah pengiriman form jika ada data yang kosong atau tidak memenuhi syarat.
@@ -82,6 +86,7 @@ Ketika pengguna menekan tombol *Send/Submit*, fungsi `validateForm()` dieksekusi
 ### Penyelesaian
 
 ![Tugas 3.2](img/image-3.png)<br>
+https://latihanpertemuan6javascript.vercel.app/tugas3-2.html <br>
 
 **Fitur:**
 *   **Validasi Struktur Email Kuat:** Menggunakan *Regular Expression* (Regex) untuk memastikan input benar-benar memiliki format struktur email yang valid (contoh: `nama@domain.com`).
@@ -102,7 +107,8 @@ Fungsi menggunakan metode `e.preventDefault()` untuk mencegah halaman termuat ul
 
 ### Penyelesaian
 
-![Tugas 4](img/image-4.png)
+![Tugas 4](img/image-4.png)<br>
+https://latihanpertemuan6javascript.vercel.app/tugas4.html<br>
 
 **Fitur:**
 *   **Dropdown Ter-generasi Otomatis:** Opsi di dalam *dropdown* tidak ditulis secara manual (*hardcoded*) di dalam file HTML, melainkan disuntikkan (*injected*) langsung oleh sistem JavaScript.
